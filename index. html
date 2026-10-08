@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Praachin Bharatiya Sabhyata</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#fffaf2;
+    color:#2d1b0e;
+    line-height:1.7;
+}
+
+header{
+    background:linear-gradient(135deg,#7b1e00,#d35400,#f39c12);
+    color:white;
+    text-align:center;
+    padding:45px 20px;
+}
+
+header h1{
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:18px;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:#3b1808;
+    padding:12px 5px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 10px;
+    font-weight:bold;
+    font-size:15px;
+}
+
+nav a:hover{
+    color:#ffc107;
+}
+
+.hero{
+    min-height:430px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:50px 20px;
+    background:
+    linear-gradient(rgba(70,25,0,.65),rgba(70,25,0,.65)),
+    url("https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1400&q=80");
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.hero h2{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:19px;
+    max-width:700px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 25px;
+    background:#f39c12;
+    color:#fff;
+    text-decoration:none;
+    border-radius:25px;
+    font-weight:bold;
+}
+
+section{
+    padding:55px 20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.title{
+    text-align:center;
+    color:#8b2c08;
+    font-size:30px;
+    margin-bottom:30px;
+}
+
+.intro{
+    text-align:center;
+    max-width:850px;
+    margin:auto;
+    font-size:17px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:22px;
+    margin-top:30px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 18px rgba(0,0,0,.12);
+    border-top:5px solid #d35400;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+.card h3{
+    color:#9b3508;
+    margin-bottom:10px;
+}
+
+.timeline{
+    border-left:4px solid #d35400;
+    max-width:800px;
+    margin:30px auto;
+    padding-left:25px;
+}
+
+.time{
+    margin-bottom:25px;
+}
+
+.time h3{
+    color:#8b2c08;
+}
+
+.quote{
+    background:#fff0d5;
+    border-left:6px solid #f39c12;
+    padding:25px;
+    margin-top:30px;
+    font-size:19px;
+    font-style:italic;
+    text-align:center;
+}
+
+footer{
+    background:#2d1207;
+    color:white;
+    text-align:center;
+    padding:30px 15px;
+}
+
+footer p{
+    margin:5px;
+}
+
+@media(max-width:600px){
+    header h1{
+        font-size:29px;
+    }
+
+    .hero h2{
+        font-size:30px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    nav a{
+        display:inline-block;
+        margin:4px 6px;
+        font-size:13px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🏛️ Praachin Bharatiya Sabhyata</h1>
+    <p>भारत की गौरवशाली प्राचीन संस्कृति और इतिहास</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">परिचय</a>
+    <a href="#sabhyata">सभ्यताएँ</a>
+    <a href="#timeline">कालक्रम</a>
+    <a href="#contact">संपर्क</a>
+</nav>
+
+<section class="hero" id="home">
+    <div>
+        <h2>भारत की प्राचीन विरासत</h2>
+        <p>
+            प्राचीन भारतीय सभ्यता विश्व की सबसे समृद्ध और प्राचीन
+            सभ्यताओं में से एक है। इसकी संस्कृति, ज्ञान, कला और
+            परंपराओं ने मानव इतिहास को गहराई से प्रभावित किया।
+        </p>
+        <a class="btn" href="#about">और जानें ↓</a>
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="title">📜 प्राचीन भारत का परिचय</h2>
+
+    <p class="intro">
+        प्राचीन भारत में अनेक महान सभ्यताओं और संस्कृतियों का विकास हुआ।
+        सिंधु घाटी सभ्यता से लेकर वैदिक काल, मौर्य और गुप्त काल तक
+        भारत ने विज्ञान, गणित, दर्शन, साहित्य, कला और वास्तुकला के क्षेत्र
+        में महत्वपूर्ण योगदान दिया।
+    </p>
+
+    <div class="quote">
+        “भारत केवल एक देश नहीं, बल्कि हजारों वर्षों की संस्कृति,
+        ज्ञान और परंपराओं की जीवंत विरासत है।”
+    </div>
+</section>
+
+<section id="sabhyata">
+    <h2 class="title">🏛️ प्रमुख प्राचीन सभ्यताएँ</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>सिंधु घाटी सभ्यता</h3>
+            <p>
+                सिंधु घाटी सभ्यता भारतीय उपमहाद्वीप की प्राचीन नगरीय
+                सभ्यताओं में से एक थी। हड़प्पा और मोहनजोदड़ो इसके
+                प्रमुख नगर थे।
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>वैदिक सभ्यता</h3>
+            <p>
+                वैदिक काल में वेदों की रचना और धार्मिक तथा सामाजिक
+                परंपराओं का विकास हुआ। इस काल ने भारतीय संस्कृति पर
+                गहरा प्रभाव डाला।
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>मौर्य साम्राज्य</h3>
+            <p>
+                मौर्य काल में एक विशाल साम्राज्य का विकास हुआ।
+                चंद्रगुप्त मौर्य और सम्राट अशोक इस काल के प्रमुख
+                शासक थे।
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>गुप्त काल</h3>
+            <p>
+                गुप्त काल को भारतीय इतिहास का महत्वपूर्ण सांस्कृतिक
+                और वैज्ञानिक विकास का काल माना जाता है। कला, साहित्य,
+                गणित और विज्ञान में उल्लेखनीय प्रगति हुई।
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="timeline">
+    <h2 class="title">⏳ ऐतिहासिक कालक्रम</h2>
+
+    <div class="timeline">
+
+        <div class="time">
+            <h3>सिंधु घाटी सभ्यता</h3>
+            <p>प्राचीन नगरीय संस्कृति, योजनाबद्ध नगर और विकसित जल निकासी व्यवस्था के लिए प्रसिद्ध।</p>
+        </div>
+
+        <div class="time">
+            <h3>वैदिक काल</h3>
+            <p>वेद, धार्मिक परंपराएँ, शिक्षा और सामाजिक व्यवस्था का विकास।</p>
+        </div>
+
+        <div class="time">
+            <h3>मौर्य काल</h3>
+            <p>चंद्रगुप्त मौर्य और अशोक के समय विशाल साम्राज्य का विकास।</p>
+        </div>
+
+        <div class="time">
+            <h3>गुप्त काल</h3>
+            <p>विज्ञान, गणित, साहित्य, कला और संस्कृति के क्षेत्र में महत्वपूर्ण उपलब्धियाँ।</p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2 class="title">🪷 भारतीय ज्ञान और संस्कृति</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>📚 शिक्षा</h3>
+            <p>प्राचीन भारत में शिक्षा के अनेक केंद्र विकसित हुए और ज्ञान की विभिन्न शाखाओं का अध्ययन किया जाता था।</p>
+        </div>
+
+        <div class="card">
+            <h3>🔢 गणित</h3>
+            <p>भारतीय गणितज्ञों ने गणित के विकास में महत्वपूर्ण योगदान दिया। शून्य और दशमलव पद्धति भारतीय गणित की महत्वपूर्ण उपलब्धियाँ हैं।</p>
+        </div>
+
+        <div class="card">
+            <h3>🧘 योग</h3>
+            <p>योग भारतीय परंपरा का महत्वपूर्ण हिस्सा रहा है और आज विश्वभर में लोकप्रिय है।</p>
+        </div>
+
+        <div class="card">
+            <h3>🏺 कला और वास्तुकला</h3>
+            <p>मंदिर, स्तूप, मूर्तिकला और प्राचीन नगर भारतीय कला एवं वास्तुकला की समृद्ध परंपरा को दर्शाते हैं।</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="title">📞 संपर्क</h2>
+
+    <p class="intro">
+        यह वेबसाइट प्राचीन भारतीय सभ्यता, संस्कृति और इतिहास के
+        बारे में जानकारी साझा करने के उद्देश्य से बनाई गई है।
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Praachin Bharatiya Sabhyata</p>
+    <p>भारत की गौरवशाली विरासत 🇮🇳</p>
+</footer>
+
+</body>
+</html>
